@@ -1,5 +1,5 @@
 import os
-PATH = 'C:/Riot Games/League of Legends/RADS/solutions/lol_game_client_sln/releases/0.0.1.217/MyNotes.txt'
+from constants import PATH
 
 prev_stamp = 0
 def poll():

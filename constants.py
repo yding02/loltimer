@@ -1,3 +1,5 @@
+from config import *
+
 """
 ROLES
 """
@@ -95,3 +97,10 @@ COMMANDS = {TRACK : TRACK_CANON,
 MISC
 """
 DEFAULT_OFFSET = 10
+
+"""
+CHAMPIONS
+"""
+#TODO
+
+
