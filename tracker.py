@@ -48,7 +48,7 @@ def eval_summs(role):
   if role == ALL_ROLE_CANON:
     for player_key in players:
       player = players[player_key]
-      s += get_summ_timer(player) + ' \n\n '
+      s += get_summ_timer(player) + ' \n\n'
   else:
     player = players[role]
     s += get_summ_timer(player)
