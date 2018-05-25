@@ -17,12 +17,13 @@ NO_ROLE_CANON = 'norole'
 ALL_ROLE_CANON = 'allrole'
 
 ROLES = { TOP : TOP_CANON,
-          MID : MID_CANON,
           JG : JG_CANON,
+          MID : MID_CANON,
           BOT : BOT_CANON,
           SUPP : SUPP_CANON,
           ALL_ROLE : ALL_ROLE_CANON
         }
+        
 """
 SUMMONERS
 """

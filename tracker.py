@@ -16,8 +16,8 @@ class Player:
     
 def init_players():
   players[TOP_CANON]  = Player(TOP_CANON)
-  players[MID_CANON]  = Player(MID_CANON)
   players[JG_CANON]   = Player(JG_CANON)
+  players[MID_CANON]  = Player(MID_CANON)
   players[BOT_CANON]  = Player(BOT_CANON)
   players[SUPP_CANON] = Player(SUPP_CANON)
 
@@ -32,12 +32,13 @@ def set_summ(player, summ, offset):
   
 def get_summ_timer(player):
   t = time()
-  s = player.role + ' '
+  s = '{:6} '
+  s = s.format(player.role)
   for summ in player.summs:
+    template = '{:8} {:3}    '
     diff = round(player.summs[summ] - t)
     if diff > 0:
-      s += summ + ' '
-      s += str(diff) + ' '
+      s += template.format(summ, diff)
   return s
   
 def eval_summs(role):
@@ -47,7 +48,7 @@ def eval_summs(role):
   if role == ALL_ROLE_CANON:
     for player_key in players:
       player = players[player_key]
-      s += get_summ_timer(player) + ' | '
+      s += get_summ_timer(player) + ' \n\n '
   else:
     player = players[role]
     s += get_summ_timer(player)
