@@ -1,7 +1,7 @@
 """
 ROLES
 """
-TOP = ('top', )
+TOP = ('top', 't')
 MID = ('mid', 'm', 'middle')
 JG = ('jungle', 'jg', 'j')
 BOT = ('bot', 'ad', 'adc', 'a', 'b')
