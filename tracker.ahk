@@ -2,23 +2,23 @@
 #UseHook
 
 $numpad1::
-send {enter}/n track top{space}
+send {enter}/n track t{space}
 return
 
 $numpad2::
-send {enter}/n track jg{space}
+send {enter}/n track j{space}
 return
 
 $numpad3::
-send {enter}/n track mid{space}
+send {enter}/n track m{space}
 return
 
 $numpad4::
-send {enter}/n track adc{space}
+send {enter}/n track a{space}
 return
 
 $numpad5::
-send {enter}/n track supp{space}
+send {enter}/n track s{space}
 return
 
 $numpad7::
